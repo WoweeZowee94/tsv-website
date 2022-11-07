@@ -19,10 +19,10 @@ const Navbar = () => {
   });
   return (
     <div className="AppBar">
-      <div className="logo">Three Seasons Cafe</div>
+      <div className="logo"> <span>Three Seasons</span> <span style={{ "color": "#01bf71"}}>Café</span> </div>
       <NavMenu />
       <div className="bars">
-        {isMobile?<FaBars className="icon-bars" />:<SocialIcons />}
+        {isMobile ? <FaBars className="icon-bars" /> : <SocialIcons />}
       </div>
     </div>
   );

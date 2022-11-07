@@ -1,7 +1,10 @@
 html,
-body {
+body,
+head {
   width: 100%;
   height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 element {
@@ -127,7 +130,6 @@ a:hover {
   cursor: pointer;
 }
 
-/* ------------- */ 
 
 /*  About Us */
 
@@ -203,7 +205,7 @@ a:hover {
   transition: 0.2s ease-in-out;
 }
 
-/* ------------- */
+/* Mobile Styling  */
 
 @media only screen and (max-width: 900px) {
   .AboutUsImage {
@@ -269,15 +271,15 @@ a:link {
 
 .CafeMenuContainer {
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1.5em;
-  
 }
 
 .CafeMenuMenu {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-
+  margin-bottom: 100px;
 }
 
 .CafeMenuGroupHeading {
@@ -329,7 +331,7 @@ a:link {
   }
 }
 
-/* ------------- */
+/* Our Team */
 
 
 .OurTeam {
@@ -341,7 +343,6 @@ a:link {
   /* border-top: 1.5px solid black; */
   text-align: center;
   align-items: center;
-  background-color: #01bf71;
   margin-bottom: 150px;
 }
 
@@ -353,17 +354,17 @@ a:link {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: #01bf71;
 }
 
 .OurTeamInfo {
   display: flex;
-  gap: 120px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin-bottom: 25px;
   margin-top: 25px;
+  
 }
 
 .TeamInfoHeader {
@@ -389,6 +390,100 @@ a:link {
   gap: 5px;
   margin-bottom: 50px;
   padding: 5px;
+  background-color: #01bf71;
+  padding: 50px;
+  border-radius: 10px;
 }
 
+.InfoContainer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+menu.Link:hover {
+  border-bottom: 1px solid black;
+}
+
+/*  Tabs   */
+
+.TabContainer {
+  display: flex;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  position: relative;
+  background: #f1f1f1;
+  /* margin: 100px auto 0; */
+  word-break: break-all;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.BlockTabs {
+  display: flex;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tab  {
+  background: white;
+  border-bottom: 1px solid transparent;
+}
+
+.active-tab::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: #01bf71;
+}
+
+.content-tabs {
+  flex-grow : 1;
+}
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: inline-block
+}
+
+::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
