@@ -1,5 +1,5 @@
 import { React } from 'react'
-import background from '../images/banner.jpg'
+import background from '../../images/banner.jpg'
 
 const Banner = () => {
     return <div className="BannerImg" style={{
@@ -10,7 +10,7 @@ const Banner = () => {
         backgroundRepeat: 'no-repeat',
         backgroundSize:  'auto auto',
         justifySelf: 'center',
-        backgroundPosition: 'relative',
+        backgroundPosition: 'center',
     }} />
 }
 

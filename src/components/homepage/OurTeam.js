@@ -11,8 +11,8 @@ const OurTeam = () => {
             <Avatar
               className="TeamInfoAvatar"
               style={{
-                height: "200px",
-                width: "190px",
+                height: "190px",
+                width: "180px",
                 marginLeft: "auto",
                 marginRight: "auto",
               }}
@@ -27,8 +27,8 @@ const OurTeam = () => {
             <Avatar
               className="TeamInfoAvatar"
               style={{
-                height: "200px",
-                width: "190px",
+                height: "190px",
+                width: "180px",
                 marginLeft: "auto",
                 marginRight: "auto",
               }}
@@ -43,8 +43,8 @@ const OurTeam = () => {
             <Avatar
               className="TeamInfoAvatar"
               style={{
-                height: "200px",
-                width: "190px",
+                height: "190px",
+                width: "180px",
                 marginLeft: "auto",
                 marginRight: "auto",
               }}
