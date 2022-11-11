@@ -21,7 +21,7 @@ const ImageSlider = () => {
     width={562}
     height={684}
     images={images}
-    showBullets={true}
+    showBullets={false}
     showNavs={false}
     autoPlay={true}
     slideDuration={2}

@@ -16,6 +16,7 @@ const OurTeam = () => {
                 marginLeft: "auto",
                 marginRight: "auto",
               }}
+              src={`${require("../../images/TracyJPG.jpg")}`}
             />
             <p className="TeamInfoHeader"> Tracy Gray </p>
             <p className="TeamInfoDesc">
@@ -32,6 +33,7 @@ const OurTeam = () => {
                 marginLeft: "auto",
                 marginRight: "auto",
               }}
+              src={`${require("../../images/KrisJPG.jpg")}`}
             />
             <p className="TeamInfoHeader"> Kris Kelley </p>
             <p className="TeamInfoDesc">
@@ -48,6 +50,7 @@ const OurTeam = () => {
                 marginLeft: "auto",
                 marginRight: "auto",
               }}
+              src={`${require("../../images/DrewJPG.jpg")}`}
             />
             <p className="TeamInfoHeader"> Drew Chefman </p>
             <p className="TeamInfoDesc">
