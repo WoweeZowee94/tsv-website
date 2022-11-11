@@ -4,7 +4,7 @@ import About from "./components/homepage/About";
 import Navbar from "./components/nav/Navbar";
 import Footer from "./components/nav/Footer";
 import CafeMenu from "./components/menu/CafeMenu";
-import Events from "./components/Events";
+import Events from "./components/events/Events";
 
 const App = () => {
   return (
