@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/homepage/About";
 import Navbar from "./components/nav/Navbar";
-import Footer from "./components/nav/Footer";
+import BrunchMenu from "./components/events/BrunchMenu";
 import CafeMenu from "./components/menu/CafeMenu";
 import Events from "./components/events/Events";
 
@@ -16,6 +16,7 @@ const App = () => {
           <Route path="/events" element={<Events />} />
           <Route path="/menu" element={<CafeMenu />} />
           <Route path="/contact" />
+          <Route path="/buffets" element={<BrunchMenu />} />
         </Routes>
         {/* <Footer /> */}
       </Router>

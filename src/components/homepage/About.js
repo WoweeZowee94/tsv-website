@@ -1,5 +1,6 @@
 import Banner from "./Banner";
 import ImageSlider from "./ImageSlider";
+import EmailForm from "./EmailForm";
 import OurTeam from "./OurTeam";
 import { useNavigate } from "react-router-dom";
 
@@ -43,6 +44,7 @@ const About = () => {
         <ImageSlider />
       </div>
       <OurTeam />
+      <EmailForm />
     </div>
   );
 };

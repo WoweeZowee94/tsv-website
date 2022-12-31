@@ -1,4 +1,7 @@
 import React from "react";
+import qiuche from '../../images/miniquiche.jpg'
+import '../../App.css'
+
 
 const BrunchMenu = () => {
   return (
@@ -33,17 +36,20 @@ const BrunchMenu = () => {
         </div>
       </div>
       <div className="QuicheTeaContiner">
+        <div className="QuicheImgContainer">
         <div className="QuicheFrittataContainer">
           <h3>Quiche or Frittata:</h3>
           <div style={{ textDecoration: "underline" }}>
             Please select two of the following
           </div>
           <ul className="QuicheList">
-            <div> Bacon Cheese Lorraine </div>
-            <div> Peppers, Onions and Ham</div>
-            <div> Spinach and Swiss </div>
-            <div> Vegetarian </div>
+            <li> Bacon Cheese Lorraine </li>
+            <li> Peppers, Onions and Ham</li>
+            <li> Spinach and Swiss </li>
+            <li> Vegetarian </li>
           </ul>
+        </div>
+        <img src={`${require("../../images/miniquiche.jpg")}`} width="325" height="325"></img>
         </div>
         <div className="TeaContainer">
           <h3>Petite Tea Sandwiches:</h3>
@@ -51,10 +57,10 @@ const BrunchMenu = () => {
             Please select two from the following
           </div>
           <ul className="TeaList">
-            <div> Waldorf Chicken Salad with Spring Mix and Tomato </div>
-            <div> Honey Turkey with sharp cheddar and apple</div>
-            <div> Roasted Vegetable with Havarti</div>
-            <div> Roast Beef with Aloutte</div>
+            <li> Waldorf Chicken Salad with Spring Mix and Tomato </li>
+            <li> Honey Turkey with sharp cheddar and apple</li>
+            <li> Roasted Vegetable with Havarti</li>
+            <li> Roast Beef with Aloutte</li>
           </ul>
         </div>
       </div>
