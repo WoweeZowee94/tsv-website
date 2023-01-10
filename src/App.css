@@ -1,4 +1,4 @@
-@import './styles.css';
+@import "./styles.css";
 
 html,
 body,
@@ -10,11 +10,11 @@ head {
 }
 
 element {
---phthalo-green: #14281dff;
---hunter-green: #355834ff;
---antique-bronze: #6e633dff;
---light-french-beige: #c2a878ff;
---baby-powder: #f1f5f2ff;
+  --phthalo-green: #14281dff;
+  --hunter-green: #355834ff;
+  --antique-bronze: #6e633dff;
+  --light-french-beige: #c2a878ff;
+  --baby-powder: #f1f5f2ff;
 }
 
 .App {
@@ -42,7 +42,7 @@ element {
   /* font-weight: bold; */
   bottom: 0;
   width: 100%;
-  height: 2.5rem; 
+  height: 2.5rem;
   text-align: center;
 }
 
@@ -84,11 +84,11 @@ element {
 }
 
 a {
-  color: black
+  color: black;
 }
 
 a:hover {
-  color:#01bf71;
+  color: #01bf71;
   transition: 0.2s ease-in-out;
   cursor: pointer;
   position: sticky;
@@ -113,12 +113,16 @@ a:hover {
   margin-top: 10px;
 }
 
-.icon-facebook, .icon-linkedin, .icon-phone {
+.icon-facebook,
+.icon-linkedin,
+.icon-phone {
   height: 30px;
   width: 30px;
 }
 
-.icon-facebook:hover, .icon-linkedin:hover, .icon-phone:hover {
+.icon-facebook:hover,
+.icon-linkedin:hover,
+.icon-phone:hover {
   color: #01bf71;
 }
 
@@ -131,7 +135,6 @@ a:hover {
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
-
 
 /*  About Us */
 
@@ -152,6 +155,7 @@ a:hover {
 .AboutUsBody {
   text-align: left;
   margin-top: 35px;
+  margin-bottom: 250px;
   font-size: 18px;
 }
 
@@ -161,7 +165,8 @@ a:hover {
   gap: 50px;
   margin-top: 25px;
   font-weight: light;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
+  position: relative;
 }
 
 .AboutUsBanner {
@@ -175,36 +180,40 @@ a:hover {
   margin-bottom: 25px;
 }
 
-
 .AboutUsMenuBtn {
-  margin-top: 45px;
+  margin-top: 40px;
   margin-right: 15px;
-  background-color:#01bf71;
-  border-radius: 15px;
-  border: .75px solid black;
-  font-size: 18px;
-  padding: 15px;
+  background-color: #01bf71;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 12px;
+  text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
   cursor: pointer;
+  -webkit-transition-duration: 0.3s;
 }
 
 .AboutUsEventMenuBtn {
   margin-top: 15px;
   margin-right: 15px;
   background-color: #01bf71;
-  border-radius: 15px;
-  border: .75px solid black;
-  font-size: 18px;
-  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 12px;
+  text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
   cursor: pointer;
+  -webkit-transition-duration: 0.3s;
 }
 
-.AboutUsMenuBtn:hover, .AboutUsEventMenuBtn:hover {
-  filter: brightness(150%);
-  transition: 0.2s ease-in-out;
+.AboutUsMenuBtn:hover,
+.AboutUsEventMenuBtn:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
 }
 
 /* Mobile Styling  */
@@ -213,15 +222,23 @@ a:hover {
   .AboutUsImage {
     display: none;
   }
+  .contactFormContainer {
+    flex-direction: column;
+  }
+  .EventsContainer {
+    flex-direction: column;
+  }
   .menu {
     display: none;
   }
-  .icon-facebook, .icon-linkedin, .icon-phone {
+  .icon-facebook,
+  .icon-linkedin,
+  .icon-phone {
     display: none;
     visibility: hidden;
   }
   .ImageSliderContainer {
-    display: none
+    display: none;
   }
   .icon-bars {
     margin-right: 15px;
@@ -250,6 +267,7 @@ a:hover {
   }
   .AboutUsContentContainer {
     margin-top: 0px;
+    flex-direction: column;
   }
   .OurTeamInfo {
     flex-direction: column;
@@ -310,7 +328,7 @@ a:link {
 }
 
 .CafeMenuItemHeading {
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
   display: flex;
   justify-content: space-between;
 }
@@ -322,16 +340,15 @@ a:link {
 
 @media screen and (min-width: 992px) {
   .CafeMenu {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .CafeMenuGroup {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Our Team */
-
 
 .OurTeam {
   max-width: 1500px;
@@ -343,6 +360,12 @@ a:link {
   text-align: center;
   align-items: center;
   margin-bottom: 60px;
+}
+
+.OurTeamContainer {
+  position: relative;
+  background-color: whitesmoke;
+  transform: translateY(-24px);
 }
 
 .OurTeamTagline {
@@ -361,9 +384,9 @@ a:link {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 200px;
   margin-top: 25px;
-  
+  background-color: whitesmoke;
 }
 
 .TeamInfoHeader {
@@ -378,8 +401,8 @@ a:link {
 }
 
 .TeamInfoAvatar {
-  height: 240px; 
-  width: 222px; 
+  height: 240px;
+  width: 222px;
   margin-bottom: 15px;
 }
 
@@ -431,11 +454,11 @@ menu.Link:hover {
   position: relative;
   outline: none;
 }
-.tabs:not(:last-child){
+.tabs:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.274);
 }
 
-.active-tab  {
+.active-tab {
   background: white;
   border-bottom: 1px solid transparent;
 }
@@ -453,7 +476,7 @@ menu.Link:hover {
 }
 
 .content-tabs {
-  flex-grow : 1;
+  flex-grow: 1;
 }
 .content {
   background: white;
@@ -476,10 +499,11 @@ menu.Link:hover {
   height: 100%;
 }
 .active-content {
-  display: inline-block
+  display: inline-block;
 }
 
-::before, ::after {
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -491,12 +515,41 @@ menu.Link:hover {
 
 .EventsContainer {
   font-family: "Poppins", sans-serif;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+
+.EventsMasterContainer {
+  font-family: "Poppins", sans-serif;
+}
+.EventsPdfButton {
+  margin-left: auto;
+  align-items: center;
 }
 
 .EventsBrunchInfo {
   max-width: 1500px;
   padding: 25px;
+}
+
+.EventsLink {
+  height: 30px;
+  font-size: 24px;
+}
+
+.LinkContainer {
+  margin-top: 10px;
+}
+.LinkArrow {
+  height: 30px;
+  width: 30px;
+  transform: translateY(7px);
+  font-size: 24px;
 }
 
 .QuicheTeaContiner {
@@ -516,7 +569,6 @@ menu.Link:hover {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  
 }
 
 .TeaContainer {
@@ -540,7 +592,7 @@ menu.Link:hover {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  margin-left: auto;;
+  margin-left: auto;
   margin-right: auto;
   padding: 15px;
 }
@@ -593,7 +645,7 @@ menu.Link:hover {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
-    margin-right: 2em;
+  margin-right: 2em;
 }
 
 .EmailFormContainer {
@@ -604,7 +656,7 @@ menu.Link:hover {
   max-width: 800px;
   align-items: center;
   margin-right: auto;
-  margin-left: auto; 
+  margin-left: auto;
   margin-bottom: 100px;
 }
 
@@ -613,5 +665,129 @@ menu.Link:hover {
   margin: 4px 0;
   padding: 8px;
   width: 399px;
+  border-radius: 12px;
 }
 
+.EmailFormBtn {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #01bf71;
+  margin-right: auto;
+  margin-left: 50px;
+  border: 0.5 px solid black;
+  padding: 8px;
+  width: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+}
+
+.EmailFormBtn:hover,
+.EmailFormBtn:active,
+.EmailFormBtn:focus {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  background-color: whitesmoke;
+}
+
+::placeholder {
+  font-family: "Noto Sans", sans-serif;
+}
+.EmailFormContainer {
+  margin: 0px;
+}
+.custom-shape-divider-bottom-1672709321 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: whitesmoke;
+}
+
+.custom-shape-divider-bottom-1672709321 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1672709321 .shape-fill {
+  fill: #01bf71;
+}
+
+.curveContainer {
+  position: relative;
+  margin-top: 200px;
+}
+
+.contactContainer {
+  height: 500px;
+  background-color: #01bf71;
+  transform: translateY(-25px);
+  font-family: "Noto Sans", sans-serif;
+}
+
+.contactFormContainer {
+  display: flex;
+  background-color: #01bf71;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.EventsBodyContainer {
+  text-align: left;
+}
+
+.custom-shape-divider-bottom-1672838994 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1672838994 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1672838994 .shape-fill {
+  fill: #f5f5f5;
+}
+
+.custom-shape-divider-bottom-1673187484 {
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.custom-shape-divider-bottom-1673187484 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1673187484 .shape-fill {
+  fill: #01bf71;
+}
