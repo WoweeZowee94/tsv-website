@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import Pdf from "../../images/EventsPDF.pdf";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import EmailForm from "../homepage/EmailForm";
+import { AiFillPhone, AiOutlinePhone, AiTwotoneMail } from "react-icons/ai";
+import { BsFillHouseDoorFill, BsHouseDoorFill } from "react-icons/bs";
+import { light } from "@mui/material/styles/createPalette";
 
 const Events = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,7 +25,7 @@ const Events = () => {
       <div className="EventsContainer">
         <div className="EventsBodyContainer">
           <h1> Hosting Your Event At Three Seaons </h1>
-          <p style={{ maxWidth: "550px", minWidth: "550px" }}>
+          <p style={{ maxWidth: "550px" }}>
             Three Seasons Café has a full bar and grill room overlooking our
             scenic golf course. Our private dining room on the main level is a
             perfect location for parties up to 50 people, and our lower level
@@ -58,8 +61,8 @@ const Events = () => {
         </div>
         <img
           src={require("../../images/eventsImage.png")}
-          height={isMobile ? "450px" : "650px"}
-          width={isMobile ? "450px" : "650px"}
+          alt="banquet"
+          className="EventsImage"
           style={{
             borderRadius: "10px",
             display:
@@ -92,18 +95,45 @@ const Events = () => {
           transform: "translateY(-24px)",
         }}
       >
-        <h1 style={{ textAlign: "center", paddingTop: "50px" }}> Contact Us</h1>
+        <h1
+          style={{
+            textAlign: "center",
+            paddingTop: "50px",
+            fontFamily: "Poppins",
+          }}
+        >
+          {" "}
+          Contact Us
+        </h1>
         <div className="contactFormContainer">
           <EmailForm />
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.235723989974!2d-72.55583890730996!3d41.86627457205285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6f84dbc93ec7b%3A0x36a8ff0f08db9d1c!2s516%20Griffin%20Rd%2C%20South%20Windsor%2C%20CT%2006074!5e0!3m2!1sen!2sus!4v1672710392867!5m2!1sen!2sus"
-            width="450"
-            height="400"
-            style={{ border: 0, borderRadius: "10px" }}
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div>
+            <div className="OurInfoContainer">
+              <div className="AddressInfoContainer">
+                <div style={{ fontWeight: "bold" }}>Three Seasons Cafe</div>
+                <div>517 Griffin Road</div>
+                <div>South Windsor, CT</div>
+                <div>06066</div>
+              </div>
+              <div>
+                <AiFillPhone className="InfoIcon" /> (860) 644-5077{" "}
+              </div>
+              <div>
+                <AiTwotoneMail className="InfoIcon" />{" "}
+                <a href="mailto:contactthreeseasons@gmail.com">
+                  {" "}
+                  contactthreeseasons@gmail
+                </a>
+              </div>
+              <div>
+                <BsHouseDoorFill className="InfoIcon" />{" "}
+                <a href="https://www.google.com/maps/dir/''/517+Griffin+Rd,+South+Windsor,+CT+06074/@41.8650555,-72.5558443,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89e6f84dcef9d871:0xd4c052610c5ecb44!2m2!1d-72.5536556!2d41.8650555">
+                  {" "}
+                  Directions{" "}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

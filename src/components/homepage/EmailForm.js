@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const EmailForm = () => {
@@ -8,6 +8,19 @@ const EmailForm = () => {
     message: "",
     phone: "",
   });
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleResize = () => {
+    if (window.innerWidth < 900) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize, false);
+  }, [window.innerWidth]);
 
   const templateParams = {
     from_name: formData.from_name,
@@ -45,6 +58,7 @@ const EmailForm = () => {
 
   return (
     <div className="EmailFormContainer">
+      {/* <label className="ContactFormLabel"> Full Name </label> */}
       <input
         type="text"
         name="from_name"
@@ -52,9 +66,9 @@ const EmailForm = () => {
         onChange={(e) => onFieldChange(e)}
         placeholder="Full Name"
         className="EmailFormInput"
-        size={50}
         required
       />
+      {/* <label className="ContactFormLabel"> Email </label> */}
       <input
         type="email"
         name="email"
@@ -62,9 +76,10 @@ const EmailForm = () => {
         onChange={(e) => onFieldChange(e)}
         placeholder="Email"
         className="EmailFormInput"
-        size={50}
+        // size={isMobile ? 10 : 50}
         required
       />
+      {/* <label className="ContactFormLabel"> Phone </label> */}
       <input
         type="text"
         name="phone"
@@ -72,9 +87,9 @@ const EmailForm = () => {
         onChange={(e) => onFieldChange(e)}
         placeholder="Phone"
         className="EmailFormInput"
-        size={50}
         required
       />
+      {/* <label className="ContactFormLabel"> Message </label> */}
       <textarea
         placeholder="Message"
         value={formData.message}

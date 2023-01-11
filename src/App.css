@@ -36,14 +36,15 @@ element {
 }
 
 .Footer {
-  background-color: lightgray;
+  background-color: black;
   padding: 10px 10px 0px 10px;
-  position: fixed;
+  /* position: fixed; */
   /* font-weight: bold; */
   bottom: 0;
   width: 100%;
   height: 2.5rem;
   text-align: center;
+  margin-top: 14px;
 }
 
 .logo {
@@ -216,73 +217,27 @@ a:hover {
   -webkit-transform: scale(1.1);
 }
 
-/* Mobile Styling  */
-
-@media only screen and (max-width: 900px) {
-  .AboutUsImage {
-    display: none;
-  }
-  .contactFormContainer {
-    flex-direction: column;
-  }
-  .EventsContainer {
-    flex-direction: column;
-  }
-  .menu {
-    display: none;
-  }
-  .icon-facebook,
-  .icon-linkedin,
-  .icon-phone {
-    display: none;
-    visibility: hidden;
-  }
-  .ImageSliderContainer {
-    display: none;
-  }
-  .icon-bars {
-    margin-right: 15px;
-    font-size: 20px;
-    visibility: visible;
-  }
-  .bars {
-    display: flex;
-    justify-content: right;
-  }
-  .logo {
-    font-size: 15px;
-    margin-left: 15px;
-  }
-  .AboutUsTagline {
-    font-size: 15px;
-  }
-  .AboutUsBody {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 5px;
-  }
-  .AboutUsContainer {
-    width: 100%;
-    height: 100%;
-  }
-  .AboutUsContentContainer {
-    margin-top: 0px;
-    flex-direction: column;
-  }
-  .OurTeamInfo {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-  }
-  .OurTeamTagline {
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-    align-items: middle;
-  }
+.contactContainer {
+  height: 500px;
+  background-color: #01bf71;
+  transform: translateY(-25px);
+  font-family: "Noto Sans", sans-serif;
 }
 
-a:link {
+.contactFormContainer {
+  display: flex;
+  background-color: #01bf71;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.EventsBodyContainer {
+  text-align: left;
+}
+
+.navLink {
   text-decoration: none;
   color: black;
 }
@@ -657,15 +612,14 @@ menu.Link:hover {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 100px;
 }
 
 .EmailFormInput {
   font-family: "Noto Sans", sans-serif;
   margin: 4px 0;
   padding: 8px;
-  width: 399px;
   border-radius: 12px;
+  width: 399px;
 }
 
 .EmailFormBtn {
@@ -673,10 +627,10 @@ menu.Link:hover {
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-  background-color: #01bf71;
-  margin-right: auto;
+  background-color: whitesmoke;
   margin-left: 50px;
-  border: 0.5 px solid black;
+  margin-right: 375px;
+  border: none;
   padding: 8px;
   width: 80px;
   border-radius: 5px;
@@ -726,26 +680,6 @@ menu.Link:hover {
   margin-top: 200px;
 }
 
-.contactContainer {
-  height: 500px;
-  background-color: #01bf71;
-  transform: translateY(-25px);
-  font-family: "Noto Sans", sans-serif;
-}
-
-.contactFormContainer {
-  display: flex;
-  background-color: #01bf71;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-}
-
-.EventsBodyContainer {
-  text-align: left;
-}
-
 .custom-shape-divider-bottom-1672838994 {
   position: absolute;
   bottom: 0;
@@ -790,4 +724,195 @@ menu.Link:hover {
 
 .custom-shape-divider-bottom-1673187484 .shape-fill {
   fill: #01bf71;
+}
+
+.MobileSlider {
+  transform: translateY(-200%);
+  display: none;
+}
+
+.MobileSliderDisplay {
+  background-color: #01bf71;
+  top: -100;
+  transform: translateY(0px);
+  transition: all 0.5s ease-in-out;
+}
+
+.MobileMenu {
+  background-color: #01bf71;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.MobileLink {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.MobileOverlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.MobileOverlayContent {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.MobileOverlayCloseBtn {
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 30px;
+}
+.MobileOverlayCloseBtn:hover {
+  color: #01bf71;
+  transition: 0.3s ease-in-out;
+}
+
+.OurInfoContainer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid black;
+  padding: 40px;
+  background-color: #f5f5f5;
+  box-shadow: 5px 0px 5px gray;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.AddressInfoContainer {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InfoIcon {
+  font-size: 18px;
+}
+
+.ContactFormLabel {
+  margin-right: auto;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.EventsImage {
+  width: 650px;
+  height: 650px;
+}
+
+@media only screen and (max-width: 900px) {
+  .AboutUsImage {
+    display: none;
+  }
+
+  .EventsImage {
+    width: 375px;
+    height: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .OurTeamInfo {
+    display: flex;
+    gap: 35px;
+  }
+
+  .EmailFormInput {
+    width: 299px;
+    font-family: Poppins;
+  }
+
+  .EmailFormBtn {
+    margin-right: 275px;
+  }
+
+  .AboutUsBody {
+    margin-bottom: 130px;
+    z-index: 1;
+  }
+  .contactFormContainer {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .EventsContainer {
+    flex-direction: column;
+  }
+  .menu {
+    display: none;
+  }
+  .icon-facebook,
+  .icon-linkedin,
+  .icon-phone {
+    display: none;
+    visibility: hidden;
+  }
+  .ImageSliderContainer {
+    display: none;
+  }
+  .icon-bars {
+    margin-right: 15px;
+    font-size: 20px;
+    visibility: visible;
+  }
+  .bars {
+    display: flex;
+    justify-content: right;
+  }
+  .logo {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .AboutUsTagline {
+    font-size: 15px;
+  }
+  .AboutUsBody {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .AboutUsContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .AboutUsContentContainer {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .OurTeamInfo {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .OurTeamTagline {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: middle;
+  }
 }

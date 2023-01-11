@@ -39,6 +39,7 @@ const ImageSlider = () => {
         showNavs={false}
         autoPlay={true}
         slideDuration={2}
+        style={{ borderRadius: "10px", boxShadow: "5px 0px 5px gray" }}
       />
     </div>
   );

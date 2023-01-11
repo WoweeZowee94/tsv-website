@@ -5,6 +5,8 @@ import Navbar from "./components/nav/Navbar";
 import BrunchMenu from "./components/events/BrunchMenu";
 import CafeMenu from "./components/menu/CafeMenu";
 import Events from "./components/events/Events";
+import MobileMenu from "./components/nav/MobileMenu";
+import Footer from "./components/homepage/Footer";
 
 const App = () => {
   return (
