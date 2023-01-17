@@ -3,6 +3,9 @@ import ImageSlider from "./ImageSlider";
 import EmailForm from "./EmailForm";
 import OurTeam from "./OurTeam";
 import { useNavigate } from "react-router-dom";
+import { AiFillPhone, AiOutlinePhone, AiTwotoneMail } from "react-icons/ai";
+import { BsFillHouseDoorFill, BsHouseDoorFill } from "react-icons/bs";
+import InfoSection from "../InfoSection";
 
 const About = () => {
   const navigate = useNavigate();
@@ -21,7 +24,7 @@ const About = () => {
         Made in South Windsor for South Windsor.
       </h1>
       <div className="AboutUsContentContainer">
-        <div className="AboutUsBody">
+        {/* <div className="AboutUsBody">
           ──────── <br /> <br />
           Three Seasons Cafe, located on the scenic <br /> Topstone Golf Course
           in South Windsor CT <br /> has been delighting the people Northeastern{" "}
@@ -41,7 +44,31 @@ const About = () => {
             </button>
           </div>
         </div>
-        <ImageSlider />
+        <ImageSlider /> */}
+        <div className="about-events-info">
+          <InfoSection
+            title="Cafe"
+            body="Our cafe has been serving up all your favorite burgers, craft beers, and pub bites since 1997. Check out our menu for all our offerings!"
+            btnTitle="Cafe Menu"
+            btnColor="#01bf71"
+            btnUrl="/menu"
+            imgHeight="300px"
+            imgWidth="100%"
+            img="../images/eventsImage.png"
+            style={{ overflow: "wrap" }}
+          />
+          <InfoSection
+            title="Events"
+            body="Three Seasons Cafe has decades of experience running all kinds of events. Check out all we have to offer for your special day."
+            btnTitle="Events Menu"
+            btnColor="#01bf71"
+            btnUrl="../images/EventsPDF.pdf"
+            imgHeight="300px"
+            imgWidth="100%"
+            img="../images/eventsImage.png"
+          />
+        </div>
+        <div></div>
         <div class="custom-shape-divider-bottom-1672838994">
           <svg
             data-name="Layer 1"
@@ -71,15 +98,29 @@ const About = () => {
         <h1 style={{ textAlign: "center", marginTop: "50px" }}> Contact Us</h1>
         <div className="contactFormContainer">
           <EmailForm />
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.235723989974!2d-72.55583890730996!3d41.86627457205285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6f84dbc93ec7b%3A0x36a8ff0f08db9d1c!2s516%20Griffin%20Rd%2C%20South%20Windsor%2C%20CT%2006074!5e0!3m2!1sen!2sus!4v1672710392867!5m2!1sen!2sus"
-            width="400"
-            height="350"
-            style={{ border: 0, borderRadius: "10px" }}
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div className="OurInfoContainer">
+            <div className="AddressInfoContainer">
+              <div style={{ fontWeight: "bold" }}>Three Seasons Cafe</div>
+              <div>517 Griffin Road</div>
+              <div>South Windsor, CT</div>
+              <div>06066</div>
+            </div>
+            <div>
+              <AiFillPhone className="InfoIcon" />{" "}
+              <a href="tel:8606445077">860-644-5077</a>
+            </div>
+            <div>
+              <AiTwotoneMail className="InfoIcon" />{" "}
+              <a href="mailto:contactthreeseasons@gmail.com"> Email</a>
+            </div>
+            <div>
+              <BsHouseDoorFill className="InfoIcon" />{" "}
+              <a href="https://www.google.com/maps/dir/''/517+Griffin+Rd,+South+Windsor,+CT+06074/@41.8650555,-72.5558443,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89e6f84dcef9d871:0xd4c052610c5ecb44!2m2!1d-72.5536556!2d41.8650555">
+                {" "}
+                Directions{" "}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

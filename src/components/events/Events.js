@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import Pdf from "../../images/EventsPDF.pdf";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import EmailForm from "../homepage/EmailForm";
-import { AiFillPhone, AiOutlinePhone, AiTwotoneMail } from "react-icons/ai";
-import { BsFillHouseDoorFill, BsHouseDoorFill } from "react-icons/bs";
-import { light } from "@mui/material/styles/createPalette";
+import { AiFillPhone, AiTwotoneMail } from "react-icons/ai";
+import { BsHouseDoorFill } from "react-icons/bs";
+import InfoSection from "../InfoSection";
 
 const Events = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -53,13 +53,13 @@ const Events = () => {
             your special occasion. Please do not hesitate to contact us directly
             with any questions you may have.
           </div>
-          <div className="LinkContainer">
+          {/* <div className="LinkContainer">
             <a href={Pdf} className="EventsLink">
               Events Menu <MdKeyboardArrowRight className="LinkArrow" />{" "}
             </a>
-          </div>
+          </div> */}
         </div>
-        <img
+        {/* <img
           src={require("../../images/eventsImage.png")}
           alt="banquet"
           className="EventsImage"
@@ -70,7 +70,17 @@ const Events = () => {
                 ? "none"
                 : "display",
           }}
-        ></img>
+        ></img> */}
+        <InfoSection
+          title="Events"
+          body="Check out all we have to offer for your special day."
+          btnTitle="Events Menu"
+          btnColor="#01bf71"
+          btnUrl="../images/EventsPDF.pdf"
+          imgHeight="300px"
+          imgWidth="100%"
+          img="../images/eventsImage.png"
+        />
       </div>
       <div class="custom-shape-divider-bottom-1673187484">
         <svg
@@ -120,10 +130,7 @@ const Events = () => {
               </div>
               <div>
                 <AiTwotoneMail className="InfoIcon" />{" "}
-                <a href="mailto:contactthreeseasons@gmail.com">
-                  {" "}
-                  contactthreeseasons@gmail
-                </a>
+                <a href="mailto:contactthreeseasons@gmail.com"> Email</a>
               </div>
               <div>
                 <BsHouseDoorFill className="InfoIcon" />{" "}

@@ -151,6 +151,7 @@ a:hover {
 
 .AboutUsTagline {
   text-align: center;
+  font-family: "Gochi Hand", cursive;
 }
 
 .AboutUsBody {
@@ -293,6 +294,48 @@ a:hover {
   margin-top: 30px;
 }
 
+.SectionContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 10%);
+  max-width: 450px;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 100%;
+  border: 0.5px solid gainsboro;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.SectionTitle {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.SectionInfoContainer {
+  padding: 15px;
+  max-inline-size: 400px;
+}
+.InfoBtnSection {
+  border-top: 1px solid gainsboro;
+  margin-bottom: 0;
+  background-color: whitesmoke;
+  padding: 15px;
+  height: 100%;
+}
+.SectionBtn {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 13px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+  cursor: pointer;
+}
+.SectionBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
 @media screen and (min-width: 992px) {
   .CafeMenu {
     font-size: 18px;
@@ -359,6 +402,7 @@ a:hover {
   height: 240px;
   width: 222px;
   margin-bottom: 15px;
+  border: 2px solid black;
 }
 
 .InfoContainer {
@@ -799,10 +843,11 @@ menu.Link:hover {
   border-left: 1px solid black;
   padding: 40px;
   background-color: #f5f5f5;
-  box-shadow: 5px 0px 5px gray;
+  box-shadow: 5px 0px 5px black;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  width: 275px;
 }
 
 .AddressInfoContainer {
@@ -825,6 +870,48 @@ menu.Link:hover {
 .EventsImage {
   width: 650px;
   height: 650px;
+  box-shadow: 1px 0px 1px gray;
+}
+
+.BannerImg {
+  height: "400px";
+  width: "100%";
+  align-self: "center";
+  background-repeat: "no-repeat";
+  background-size: "100% 100%";
+  top: "0";
+  left: "0";
+  background-position: "center";
+}
+
+.InfoBtnContainer {
+  background-color: #01bf71;
+  width: 120px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.InfoBtnLink {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.InfoBtnLink:hover {
+  color: black;
+}
+
+.about-events-info {
+  margin-top: 5px;
+  margin-bottom: 150px;
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 900px) {
@@ -832,11 +919,23 @@ menu.Link:hover {
     display: none;
   }
 
+  .about-events-info {
+    margin-top: 25px;
+    margin-bottom: 150px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .BannerImg {
+    height: 250px;
+  }
   .EventsImage {
     width: 375px;
     height: 375px;
     margin-left: auto;
     margin-right: auto;
+    display: none;
   }
 
   .OurTeamInfo {
@@ -890,7 +989,7 @@ menu.Link:hover {
     margin-left: 15px;
   }
   .AboutUsTagline {
-    font-size: 15px;
+    font-size: 24px;
   }
   .AboutUsBody {
     font-size: 12px;
