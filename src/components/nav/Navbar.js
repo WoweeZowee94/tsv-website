@@ -2,7 +2,6 @@ import NavMenu from "./NavMenu";
 import { FaBars } from "react-icons/fa";
 import SocialIcons from "./SocialIcons";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {

@@ -154,6 +154,10 @@ a:hover {
   font-family: "Gochi Hand", cursive;
 }
 
+.contact-tagline {
+  font-family: "Poppins", sans-serif;
+}
+
 .AboutUsBody {
   text-align: left;
   margin-top: 35px;
@@ -223,6 +227,11 @@ a:hover {
   background-color: #01bf71;
   transform: translateY(-25px);
   font-family: "Noto Sans", sans-serif;
+}
+
+.gap-filler {
+  background-color: #01bf71;
+  height: 45px;
 }
 
 .contactFormContainer {

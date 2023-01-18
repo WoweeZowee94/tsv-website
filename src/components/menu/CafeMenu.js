@@ -4,10 +4,10 @@ const CafeMenu = () => {
   ScrollToTop();
   return (
     <div className="CafeMenuContainer">
-      <div className="CafeMenuPDFMessage">
+      {/* <div className="CafeMenuPDFMessage">
         {" "}
         If you'd like to view a PDF of our menu click here.{" "}
-      </div>
+      </div> */}
       <div className="CafeMenuMenu">
         <h2 className="CafeMenuGroupHeading">Soups & Salads</h2>
         <div className="CafeMenuGroup">
@@ -564,7 +564,8 @@ const CafeMenu = () => {
                 <span className="CafeMenuItemPrice">$$MP</span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Lump lobster claw and lobster tail in warm butter served on a buttered New England roll. Served with fries and cole slaw.
+                Lump lobster claw and lobster tail in warm butter served on a
+                buttered New England roll. Served with fries and cole slaw.
               </div>
             </div>
           </div>
@@ -585,7 +586,10 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> New York Style Cheesecake </span>
+                <span className="CafeMenuItemName">
+                  {" "}
+                  New York Style Cheesecake{" "}
+                </span>
                 <span className="CafeMenuItemPrice"> $5.99 </span>
               </h3>
               <div className="CafeMenuItemDesc">

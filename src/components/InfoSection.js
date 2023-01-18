@@ -6,9 +6,6 @@ const InfoSection = ({
   title,
   body,
   btnTitle,
-  btnUrl,
-  btnColor,
-  img,
   imgHeight,
   imgWidth,
 }) => {

@@ -46,7 +46,7 @@ const OurTeam = () => {
               }}
               src={`${require("../../images/DrewJPG.jpg")}`}
             />
-            <p className="TeamInfoHeader"> Drew Chefman </p>
+            <p className="TeamInfoHeader"> Drew Goodman </p>
             <p className="TeamInfoDesc"> Head Chef </p>
           </div>
         </div>

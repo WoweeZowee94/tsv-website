@@ -2,19 +2,10 @@ import Banner from "./Banner";
 import ImageSlider from "./ImageSlider";
 import EmailForm from "./EmailForm";
 import OurTeam from "./OurTeam";
-import { useNavigate } from "react-router-dom";
-import { AiFillPhone, AiOutlinePhone, AiTwotoneMail } from "react-icons/ai";
-import { BsFillHouseDoorFill, BsHouseDoorFill } from "react-icons/bs";
-import InfoSection from "../InfoSection";
+import { AiFillPhone, AiTwotoneMail } from "react-icons/ai";
+import { BsHouseDoorFill } from "react-icons/bs";
 
 const About = () => {
-  const navigate = useNavigate();
-  const menuNavigate = () => {
-    navigate("/menu");
-  };
-  const eventNavigate = () => {
-    navigate("/events");
-  };
   return (
     <div className="AboutUsContainer">
       <div className="BannerContainer">
@@ -24,52 +15,58 @@ const About = () => {
         Made in South Windsor for South Windsor.
       </h1>
       <div className="AboutUsContentContainer">
-        {/* <div className="AboutUsBody">
-          ──────── <br /> <br />
-          Three Seasons Cafe, located on the scenic <br /> Topstone Golf Course
-          in South Windsor CT <br /> has been delighting the people Northeastern{" "}
-          <br /> Connecticut for over 20 years. <br /> <br />
-          Whether you prefer our Grill Room, <br /> sporting scenic views and a
-          rustic, <br /> gastropub setting, or our Banquet Halls <br /> that are
-          equipped to host corporate events <br /> and intimate gatherings of
-          all sizes- <br /> Our team would love to serve you. <br /> <br />
-          Be sure to consider Topstone for your <br /> next date night, to-go
-          dinner, family <br /> function, or corporate outing.
-          <div className="AboutUsBtnContainer">
-            <button className="AboutUsMenuBtn" onClick={menuNavigate}>
-              Cafe Menu
-            </button>
-            <button className="AboutUsEventMenuBtn" onClick={eventNavigate}>
-              Event Menu
-            </button>
+        <div className="about-events-info">
+          <div className="SectionContainer" style={{ borderRadius: "5px" }}>
+            <img
+              src={require("../../images/BeerPour.png")}
+              height={"300px"}
+              width={"100%"}
+              className="InfoSectionImage"
+              alt="alt"
+            />
+            <div className="SectionInfoContainer">
+              <h1 className="SectionTitle"> Cafe </h1>
+              <div>
+                {" "}
+                Our cafe has been serving up all your favorite burgers, craft
+                beers, and pub bites since 1997. Check out our menu for all our
+                offerings!{" "}
+              </div>
+            </div>
+            <div className="InfoBtnSection">
+              <div className="InfoBtnContainer SectionBtn">
+                <a href={"/menu"} className="InfoBtnLink">
+                  Cafe Menu
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="SectionContainer" style={{ borderRadius: "5px" }}>
+            <img
+              src={require("../../images/Events2.png")}
+              height={"300px"}
+              width={"100%"}
+              className="InfoSectionImage"
+              alt="alt"
+            />
+            <div className="SectionInfoContainer">
+              <h1 className="SectionTitle"> Events </h1>
+              <div>
+                Three Seasons Cafe has decades of experience running all kinds
+                of events. Check out all we have to offer for your special day.
+              </div>
+            </div>
+            <div className="InfoBtnSection">
+              <div className="InfoBtnContainer SectionBtn">
+                <a href={"/events"} className="InfoBtnLink">
+                  Events Info
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <ImageSlider /> */}
-        <div className="about-events-info">
-          <InfoSection
-            title="Cafe"
-            body="Our cafe has been serving up all your favorite burgers, craft beers, and pub bites since 1997. Check out our menu for all our offerings!"
-            btnTitle="Cafe Menu"
-            btnColor="#01bf71"
-            btnUrl="/menu"
-            imgHeight="300px"
-            imgWidth="100%"
-            img="../images/eventsImage.png"
-            style={{ overflow: "wrap" }}
-          />
-          <InfoSection
-            title="Events"
-            body="Three Seasons Cafe has decades of experience running all kinds of events. Check out all we have to offer for your special day."
-            btnTitle="Events Menu"
-            btnColor="#01bf71"
-            btnUrl="../images/EventsPDF.pdf"
-            imgHeight="300px"
-            imgWidth="100%"
-            img="../images/eventsImage.png"
-          />
-        </div>
         <div></div>
-        <div class="custom-shape-divider-bottom-1672838994">
+        <div className="custom-shape-divider-bottom-1672838994">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +92,13 @@ const About = () => {
       </div>
       <OurTeam />
       <div className="contactContainer" id="contact-container">
-        <h1 style={{ textAlign: "center", marginTop: "50px" }}> Contact Us</h1>
+        <h1
+          style={{ textAlign: "center", marginTop: "50px" }}
+          className="contact-tagline"
+        >
+          {" "}
+          Contact Us
+        </h1>
         <div className="contactFormContainer">
           <EmailForm />
           <div className="OurInfoContainer">
@@ -122,6 +125,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className="gap-filler" />
       </div>
     </div>
   );

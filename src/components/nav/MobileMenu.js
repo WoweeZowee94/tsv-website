@@ -26,7 +26,9 @@ const MobileMenu = () => {
         <Link to="/events" onClick={() => closeNav()} className="MobileLink">
           Events
         </Link>
-        <Link className="MobileLink">Golf</Link>
+        <a href="https://topstonegc.com/" className="MobileLink">
+          Golf
+        </a>
         <SocialIcons style={{ color: "white" }} />
       </div>
     </div>

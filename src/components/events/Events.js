@@ -1,25 +1,9 @@
-import { useState, useEffect } from "react";
-import Pdf from "../../images/EventsPDF.pdf";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import EmailForm from "../homepage/EmailForm";
 import { AiFillPhone, AiTwotoneMail } from "react-icons/ai";
 import { BsHouseDoorFill } from "react-icons/bs";
 import InfoSection from "../InfoSection";
 
 const Events = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  const handleResize = () => {
-    if (window.innerWidth < 900) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize, false);
-  });
   return (
     <div className="EventsMasterContainer" style={{ position: "relative" }}>
       <div className="EventsContainer">
@@ -53,24 +37,7 @@ const Events = () => {
             your special occasion. Please do not hesitate to contact us directly
             with any questions you may have.
           </div>
-          {/* <div className="LinkContainer">
-            <a href={Pdf} className="EventsLink">
-              Events Menu <MdKeyboardArrowRight className="LinkArrow" />{" "}
-            </a>
-          </div> */}
         </div>
-        {/* <img
-          src={require("../../images/eventsImage.png")}
-          alt="banquet"
-          className="EventsImage"
-          style={{
-            borderRadius: "10px",
-            display:
-              window.innerWidth < 1200 && window.innerWidth > 900
-                ? "none"
-                : "display",
-          }}
-        ></img> */}
         <InfoSection
           title="Events"
           body="Check out all we have to offer for your special day."
@@ -126,7 +93,8 @@ const Events = () => {
                 <div>06066</div>
               </div>
               <div>
-                <AiFillPhone className="InfoIcon" /> (860) 644-5077{" "}
+                <AiFillPhone className="InfoIcon" />{" "}
+                <a href="tel:8606445077">860-644-5077</a>
               </div>
               <div>
                 <AiTwotoneMail className="InfoIcon" />{" "}
@@ -142,6 +110,7 @@ const Events = () => {
             </div>
           </div>
         </div>
+        <div className="gap-filler" />
       </div>
     </div>
   );
