@@ -1,16 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import Pdf from "../images/EventsPDF.pdf";
+import Pdf from "../images/2023_menu.pdf";
 
-const InfoSection = ({
-  title,
-  body,
-  btnTitle,
-  imgHeight,
-  imgWidth,
-}) => {
-  const navigate = useNavigate();
-  const onBtnClick = () => navigate(Pdf);
+const InfoSection = ({ title, body, btnTitle, imgHeight, imgWidth }) => {
   return (
     <div className="SectionContainer" style={{ borderRadius: "5px" }}>
       <img

@@ -19,7 +19,7 @@ const OurTeam = () => {
               src={`${require("../../images/TracyJPG.jpg")}`}
             />
             <p className="TeamInfoHeader"> Tracy Gray </p>
-            <p className="TeamInfoDesc"> General Manager </p>
+            <p className="TeamInfoDesc"> Manager </p>
           </div>
           <div className="InfoContainer">
             <Avatar
@@ -32,7 +32,7 @@ const OurTeam = () => {
               }}
               src={`${require("../../images/KrisJPG.jpg")}`}
             />
-            <p className="TeamInfoHeader"> Kris Kelley </p>
+            <p className="TeamInfoHeader"> Chris Kelley </p>
             <p className="TeamInfoDesc"> Kitchen Manager</p>
           </div>
           <div className="InfoContainer">
@@ -46,8 +46,8 @@ const OurTeam = () => {
               }}
               src={`${require("../../images/DrewJPG.jpg")}`}
             />
-            <p className="TeamInfoHeader"> Drew Goodman </p>
-            <p className="TeamInfoDesc"> Head Chef </p>
+            <p className="TeamInfoHeader"> Drew Goodsell </p>
+            <p className="TeamInfoDesc"> Executive Chef </p>
           </div>
         </div>
       </div>

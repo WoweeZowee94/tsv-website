@@ -27,10 +27,10 @@ const EmailForm = () => {
   const onFormSubmit = async () => {
     await emailjs
       .send(
-        "service_e2bzdks",
-        "template_mwo1yp8",
+        "service_fp3qtw8",
+        "template_nkm4mhc",
         templateParams,
-        "h_3JXnvM9eedL6eJL"
+        "_7xHPffijlKc63Q9S"
       )
       .then(
         function (response) {
@@ -66,7 +66,7 @@ const EmailForm = () => {
       <input
         type="text"
         name="phone"
-        value={formData.email}
+        value={formData.phone}
         onChange={(e) => onFieldChange(e)}
         placeholder="Phone"
         className="EmailFormInput"

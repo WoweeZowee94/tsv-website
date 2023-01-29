@@ -46,7 +46,7 @@ const Events = () => {
           btnUrl="../images/EventsPDF.pdf"
           imgHeight="300px"
           imgWidth="100%"
-          img="../images/eventsImage.png"
+          img="../images/EventsMenu.png"
         />
       </div>
       <div class="custom-shape-divider-bottom-1673187484">
@@ -88,9 +88,9 @@ const Events = () => {
             <div className="OurInfoContainer">
               <div className="AddressInfoContainer">
                 <div style={{ fontWeight: "bold" }}>Three Seasons Cafe</div>
-                <div>517 Griffin Road</div>
+                <div>520 Griffin Road</div>
                 <div>South Windsor, CT</div>
-                <div>06066</div>
+                <div>06074</div>
               </div>
               <div>
                 <AiFillPhone className="InfoIcon" />{" "}
@@ -102,7 +102,7 @@ const Events = () => {
               </div>
               <div>
                 <BsHouseDoorFill className="InfoIcon" />{" "}
-                <a href="https://www.google.com/maps/dir/''/517+Griffin+Rd,+South+Windsor,+CT+06074/@41.8650555,-72.5558443,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89e6f84dcef9d871:0xd4c052610c5ecb44!2m2!1d-72.5536556!2d41.8650555">
+                <a href="https://www.google.com/maps/dir/''/520+Griffin+Rd,+South+Windsor,+CT+06074/@41.8658951,-72.5560972,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89e6f84dcef9d871:0x88514d5d19c480e5!2m2!1d-72.5539032!2d41.8658951">
                   {" "}
                   Directions{" "}
                 </a>
