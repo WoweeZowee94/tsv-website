@@ -4,10 +4,6 @@ const CafeMenu = () => {
   ScrollToTop();
   return (
     <div className="CafeMenuContainer">
-      {/* <div className="CafeMenuPDFMessage">
-        {" "}
-        If you'd like to view a PDF of our menu click here.{" "}
-      </div> */}
       <div className="CafeMenuMenu">
         <h2 className="CafeMenuGroupHeading">Soups & Salads</h2>
         <div className="CafeMenuGroup">
@@ -26,10 +22,10 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Classic Chili </span>
-                <span className="CafeMenuItemPrice"> $6.99 </span>
+                <span className="CafeMenuItemPrice"> $7.99 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Our signature house-made chili.
+                Our signature house-made chili served with tortilla chips.
               </div>
             </div>
           </div>
@@ -37,16 +33,17 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName">Garden Salad</span>
-                <span className="CafeMenuItemPrice"> $6.95 </span>
+                <span className="CafeMenuItemPrice"> $8.99 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Mixed greens topped with cucumbers, grape tomatoes, green
                 peppers and carrots.
                 <ul>
-                  <li> Add Chicken $4</li>
-                  <li> Add Ahi Tuna $6</li>
+                  <li> Side Salad $5</li>
+                  <li> Add Chicken $6</li>
+                  <li> Add Ahi Tuna $7</li>
                   <li> Add Grilled Shrimp $6</li>
-                  <li> Add Fresh Lobster $MP</li>
+                  <li> Add Fresh Tuna $5</li>
                 </ul>
               </div>
             </div>
@@ -55,16 +52,17 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName">Classic Caesar Salad</span>
-                <span className="CafeMenuItemPrice"> $7.95 </span>
+                <span className="CafeMenuItemPrice"> $8.99 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Crisp romaine lettuce, fresh parmesan cheese, garlic croutons
                 and classic Caesar dressing.
                 <ul>
-                  <li> Add Chicken $4</li>
-                  <li> Add Ahi Tuna $6</li>
+                  <li> Side Salad $5</li>
+                  <li> Add Chicken $6</li>
+                  <li> Add Ahi Tuna $7</li>
                   <li> Add Grilled Shrimp $6</li>
-                  <li> Add Fresh Lobster $MP</li>
+                  <li> Add Fresh Tuna $5</li>
                 </ul>
               </div>
             </div>
@@ -73,7 +71,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Ahi Tuna Asian Salad </span>
-                <span className="CafeMenuItemPrice"> $13.99 </span>
+                <span className="CafeMenuItemPrice"> $15.99 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Ahi tuna or Grilled chicken, mixed greens, mandarin oranges,
@@ -87,14 +85,13 @@ const CafeMenu = () => {
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName">
                   {" "}
-                  Buffalo Chicken Salad{" "}
+                  Southwestern Chicken Salad{" "}
                 </span>
-                <span className="CafeMenuItemPrice"> $11.95 </span>
+                <span className="CafeMenuItemPrice"> $15.99 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Grilled or crispy chicken, romaine lettuce, grape tomatoes,
-                cucumbers, carrots, bleu cheese crumbes and your choice of
-                dressing
+                Romaine topped with carrots, cucumbers, avocado, and black beans
+                served with seasoned chicken breast, tortilla strips and chipotle ranch.
               </div>
             </div>
           </div>
@@ -102,11 +99,14 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Cobb Salad </span>
-                <span className="CafeMenuItemPrice"> $14.99 </span>
+                <span className="CafeMenuItemPrice"> $15.99 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Chopped romaine, chicken, avocado, hardboiled egg, bacon, red
                 onion, cherry tomato, and bleu cheese crumbles.
+                <ul>
+                  <li>Add Grilled Shrimp $3</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Classic French Fries </span>
-                <span className="CafeMenuItemPrice"> $4.50 </span>
+                <span className="CafeMenuItemPrice"> $5.50 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 {" "}
@@ -129,7 +129,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Seasoned Fries </span>
-                <span className="CafeMenuItemPrice"> $5.50 </span>
+                <span className="CafeMenuItemPrice"> $6.50 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 {" "}
@@ -140,24 +140,24 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Jalapeno Poppers </span>
-                <span className="CafeMenuItemPrice"> $8.95</span>
+                <span className="CafeMenuItemName"> Onion Rings </span>
+                <span className="CafeMenuItemPrice"> $6.50</span>
               </h3>
               <div className="CafeMenuItemDesc">
                 {" "}
-                Served with a side of ranch.{" "}
+                Served with a side of ranch or bbq sauce.{" "}
               </div>
             </div>
           </div>
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Mozzarella Sticks </span>
+                <span className="CafeMenuItemName"> Jalapeno Poppers </span>
                 <span className="CafeMenuItemPrice"> $8.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 {" "}
-                Served with a side of mariana sauce.
+                Served with a side of ranch.
               </div>
             </div>
           </div>
@@ -167,23 +167,23 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Fried Calamari </span>
-                <span className="CafeMenuItemPrice"> $10.95 </span>
+                <span className="CafeMenuItemName"> Fried Pickles </span>
+                <span className="CafeMenuItemPrice"> $11.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Served with a side of sriracha aioli and banana peppers.
+                Basked of deep fried pickles served with chipotle ranch.
               </div>
             </div>
           </div>
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Tater Tot Barrels </span>
-                <span className="CafeMenuItemPrice"> $9.95 </span>
+                <span className="CafeMenuItemName"> Philly Eggrolls </span>
+                <span className="CafeMenuItemPrice"> $12.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Five jumbo tater tots stuffed with bacon and chive, drizzled in
-                ranch.
+                Roast beef, mushrooms, peppers and american cheese in a crispy
+                golden eggroll(6) served with chipotle ranch.
               </div>
             </div>
           </div>
@@ -191,54 +191,48 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName">
-                  {" "}
-                  Warm Bavarian Pretzels{" "}
+                  Tater Tot Barrels
                 </span>
-                <span className="CafeMenuItemPrice"> $9.95 </span>
+                <span className="CafeMenuItemPrice"> $12.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Hearty serving of five pretzel sticks served with a homemade
-                beer cheese sauce and honey mustard.
+                5 Jumbo tater tots stuffed with bacon and chive, drizzled with ranch.
               </div>
             </div>
           </div>
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Shrimp Cocktail </span>
-                <span className="CafeMenuItemPrice"> $10.95 </span>
+                <span className="CafeMenuItemName"> Boneless Wings w/ Fries </span>
+                <span className="CafeMenuItemPrice"> $15.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                6 jumbo shrimp served with a spicy cocktail sauce.
+                Freshly battered chicken tenderloins fried to perfection and tossed
+                in the sauce of your choice. Served with blue cheese.
               </div>
             </div>
           </div>
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Quesadilla </span>
-                <span className="CafeMenuItemPrice"> $10.95 </span>
+                <span className="CafeMenuItemName"> Warm Bavarian Pretzels </span>
+                <span className="CafeMenuItemPrice"> $12.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                <i>
-                  {" "}
-                  Grilled Chicken / Jerk Chicken / Shrimp / Veggie <br />{" "}
-                </i>
-                Fresh seasoned veggies or protein of your choice, diced
-                tomatoes, diced scallions, and cheddar jack cheese.
+                Hearty serving of 5 pretzel sticks served with a homemade beer cheese sauce
+                and honey mustard.
               </div>
             </div>
           </div>
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Boneless Wings </span>
-                <span className="CafeMenuItemPrice"> $11.95 </span>
+                <span className="CafeMenuItemName"> Chicken Quesadilla </span>
+                <span className="CafeMenuItemPrice"> $14.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Freshly battered chicken tenderloins fried to perfection and
-                tossed in the sauce of your choice. Served with a side of bleu
-                cheese.
+              <i> Veggie - add onions, mushrooms and peppers. <br/></i>
+                Chicken, diced tomatoes, diced scallions and cheddar jack cheese.
               </div>
             </div>
           </div>
@@ -254,9 +248,24 @@ const CafeMenu = () => {
               <div className="CafeMenuItemDesc">
                 <i>
                   Buffalo / Honey Hot / Garlic Parmesan / Smokey BBQ / Sesame
-                  Teriyaki <br />{" "}
+                  Teriyaki / Kickin Bourbon <br />{" "}
                 </i>
                 Served with celery, carrots, and bleu cheese.
+              </div>
+            </div>
+          </div>
+          <div className="CafeMenuItem">
+            <div className="CafeMenuItemText">
+              <h3 className="CafeMenuItemHeading">
+                <span className="CafeMenuItemName"> Nachos w/ Chili or Chicken </span>
+                <span className="CafeMenuItemPrice">
+                  {" "}
+                  $16.00 / (No Protein)$13.00{" "}
+                </span>
+              </h3>
+              <div className="CafeMenuItemDesc">
+                Totrilla chips, cheddar cheese, diced tomatoes, jalapenos and 
+                scallions served with sour cream and salsa.
               </div>
             </div>
           </div>
@@ -265,20 +274,22 @@ const CafeMenu = () => {
         <h3>
           {" "}
           *Served with Fries, Chips, Cole Slaw, or Chickpea Salad. Add Onion
-          Rings or Sweet Potato Fries for $1.00{" "}
+          Rings or Sweet Potato Fries for $1.50{" "}
         </h3>
         <div className="CafeMenuGroup">
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Hot Dog </span>
-                <span className="CafeMenuItemPrice"> $4.50 </span>
+                <span className="CafeMenuItemPrice"> $6.75 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 9-inch Hummel dog served on a New England style bun.
                 <ul>
                   <li> Add Kraut $.50</li>
-                  <li> Add Fries $1.00</li>
+                  <li> Add Chili $2.00</li>
+                  <li> Add Cheese $1.00</li>
+                  <li> Add Fries $2.00</li>
                 </ul>
               </div>
             </div>
@@ -287,7 +298,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Cheeseburger </span>
-                <span className="CafeMenuItemPrice"> $9.95 </span>
+                <span className="CafeMenuItemPrice"> $14.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 6oz. Angus burger or veggie burger, melted american cheese,
@@ -302,7 +313,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Chili Cheese Dog </span>
-                <span className="CafeMenuItemPrice"> $5.50 </span>
+                <span className="CafeMenuItemPrice"> $11.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Hummel dog topped with house made chili and melted cheddar
@@ -313,24 +324,24 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Patty Melt </span>
-                <span className="CafeMenuItemPrice"> $11.95 </span>
+                <span className="CafeMenuItemName"> Truffle Burger </span>
+                <span className="CafeMenuItemPrice"> $15.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                6oz. Angus burger, melted swiss and caramelized onions served on
-                rye bread.
+                6oz. Angus burger, melted cheese, arugula, fried onion strings
+                and truffle aioli on a toasted brioche bun.
               </div>
             </div>
           </div>
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Three Seasons Burger </span>
-                <span className="CafeMenuItemPrice"> $11.95 </span>
+                <span className="CafeMenuItemName"> Chipotle Burger </span>
+                <span className="CafeMenuItemPrice"> $15.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                6oz. Angus burger, melted cheddar, peppers, onions, lettuce and
-                tomatoes served on a brioche roll with a sriracha aioli.
+                6oz. Angus burger, melted cheddar jack, avocado,
+                lettuce and tomato with a house-made chipotle mayo.
               </div>
             </div>
           </div>
@@ -339,7 +350,7 @@ const CafeMenu = () => {
         <h3>
           {" "}
           *Served with Fries, Chips, Cole Slaw, or Chickpea Salad. Add Onion
-          Rings or Sweet Potato Fries for $1.00{" "}
+          Rings or Sweet Potato Fries for $1.50{" "}
         </h3>
         <div className="CafeMenuGroup">
           <div className="CafeMenuItem">
@@ -349,11 +360,11 @@ const CafeMenu = () => {
                   {" "}
                   Half Sandwich & Cup of Soup{" "}
                 </span>
-                <span className="CafeMenuItemPrice"> $7.95 </span>
+                <span className="CafeMenuItemPrice"> $11.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Turkey or tuna salad served on your choice of bread with lettuce
-                and tomato. *No side served with this item.
+                Turkey, Ham, BLT or Tuna Salad served on your choice of bread
+                with lettuce and tomato.
               </div>
             </div>
           </div>
@@ -361,7 +372,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Classic BLT </span>
-                <span className="CafeMenuItemPrice"> $8.95 </span>
+                <span className="CafeMenuItemPrice"> $12.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Thick cut bacon, lettuce, tomato, and mayo served on your choice
@@ -372,14 +383,12 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Grilled Cheese </span>
-                <span className="CafeMenuItemPrice"> $6.95 </span>
+                <span className="CafeMenuItemName"> Roast Beef Sandwich </span>
+                <span className="CafeMenuItemPrice"> $15.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                American, swiss, or cheddar cheese on your choice of bread.
-                <ul>
-                  <li> Add Bacon $2.00</li>
-                </ul>
+                Fresh sliced roast beef on a brioche roll with swiss cheese,
+                horseradish sauce, lettuce and tomato.
               </div>
             </div>
           </div>
@@ -387,13 +396,12 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Deli Sandwich</span>
-                <span className="CafeMenuItemPrice"> $8.95 </span>
+                <span className="CafeMenuItemPrice"> $12.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Turkey or tuna salad on your choice of bread with lettuce and
-                tomato.
+                Turkey, Ham or Tuna Salad on your choice of bread with lettuce and tomato.
                 <ul>
-                  <li> Also served Club Style $11.95 </li>
+                  <li> Also served Club Style $14.95 </li>
                 </ul>
               </div>
             </div>
@@ -404,7 +412,7 @@ const CafeMenu = () => {
                 <span className="CafeMenuItemName">
                   Classic Corned Beef Ruben
                 </span>
-                <span className="CafeMenuItemPrice">$11.95</span>
+                <span className="CafeMenuItemPrice">$14.95</span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Warm corned beef or turkey, melted swiss, sauerkraut, and
@@ -416,10 +424,10 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName">Philly Cheesesteak</span>
-                <span className="CafeMenuItemPrice"> $13.95</span>
+                <span className="CafeMenuItemPrice"> $15.95</span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Shaved steak, peppers, onions, and mushrooms smothered in melted
+                Shaved roast beef, peppers, onions, and mushrooms smothered in melted
                 American cheese.
               </div>
             </div>
@@ -427,38 +435,8 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName">
-                  {" "}
-                  Chicken Bacon Ranch Sandwich
-                </span>
-                <span className="CafeMenuItemPrice"> $12.95</span>
-              </h3>
-              <div className="CafeMenuItemDesc">
-                Grilled chicken breast, bacon, ranch dressing, avocado, lettuce
-                and tomato served on a brioche bun.
-              </div>
-            </div>
-          </div>
-          <div className="CafeMenuItem">
-            <div className="CafeMenuItemText">
-              <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName">
-                  {" "}
-                  Grilled Chicken Sandwich{" "}
-                </span>
-                <span className="CafeMenuItemPrice"> $10.95 </span>
-              </h3>
-              <div className="CafeMenuItemDesc">
-                Marinated chicken breast, lettuce, tomato and your choice of
-                buffalo, BBQ, or honey mustard served on a brioche bun.
-              </div>
-            </div>
-          </div>
-          <div className="CafeMenuItem">
-            <div className="CafeMenuItemText">
-              <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Veggie Wrap </span>
-                <span className="CafeMenuItemPrice"> $9.95 </span>
+                <span className="CafeMenuItemPrice"> $12.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 {" "}
@@ -471,7 +449,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName">Buffalo Chicken Wrap</span>
-                <span className="CafeMenuItemPrice"> $10.95</span>
+                <span className="CafeMenuItemPrice"> $14.95</span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Crispy or grilled chicken, grape tomatoes, chopped celery,
@@ -483,7 +461,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName">BBQ Chicken Wrap</span>
-                <span className="CafeMenuItemPrice">$10.95</span>
+                <span className="CafeMenuItemPrice">$14.95</span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Crispy or grilled chicken tossed in sweet and smokey BBQ sauce,
@@ -495,7 +473,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName">Chicken Caesar Wrap</span>
-                <span className="CafeMenuItemPrice">$10.95</span>
+                <span className="CafeMenuItemPrice">$14.95</span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Grilled chicken, caesar dressing, shredded romaine and shaved
@@ -506,13 +484,13 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Shrimp Avocado Wrap</span>
-                <span className="CafeMenuItemPrice">$12.95</span>
+                <span className="CafeMenuItemName"> Chicken Bacon Avocado Ranch Sandwich</span>
+                <span className="CafeMenuItemPrice">$15.95</span>
               </h3>
               <div className="CafeMenuItemDesc">
                 {" "}
-                Diced jumbo shrimp served with avocado, lemon-dill aioli,
-                lettuce and tomato.
+                Grilled chicken breast on a brioche bun served with bacon, ranch dressing
+                avocado, lettuce and tomato.
               </div>
             </div>
           </div>
@@ -522,26 +500,24 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Soft Tacos</span>
-                <span className="CafeMenuItemPrice"> $10.95 </span>
+                <span className="CafeMenuItemName"> Maryland Crab Cakes</span>
+                <span className="CafeMenuItemPrice"> $12.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                <i> Fish / Jerk Chicken </i> <br />2 large soft tacos with your
-                choice of protein, avocado, red onion, and cabbage topped with a
-                cilantro lime crema. Served with fries.
+                3 Large crab cakes topped with chipotle aioli and served
+                with a side of cole-slaw.
               </div>
             </div>
           </div>
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Fish Sandwich </span>
-                <span className="CafeMenuItemPrice"> $10.95 </span>
+                <span className="CafeMenuItemName"> Shrimp Avocado Wrap </span>
+                <span className="CafeMenuItemPrice"> $15.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Fresh lightly battered cod fillet fried to perfection, lettuce,
-                tomato, and tartar sauce served on a hard roll. Your choice of
-                side.
+                Large tortilla wrap with fresh shrimp, avocado, cucumber, lettuce
+                and a lemon-dill aioli.
               </div>
             </div>
           </div>
@@ -549,7 +525,7 @@ const CafeMenu = () => {
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName"> Fish & Chips </span>
-                <span className="CafeMenuItemPrice"> $12.95 </span>
+                <span className="CafeMenuItemPrice"> $18.95 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Battered and fried cod fillets served over french fries with a
@@ -560,12 +536,12 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Lobster Roll</span>
-                <span className="CafeMenuItemPrice">$$MP</span>
+                <span className="CafeMenuItemName"> Fish Sandwich</span>
+                <span className="CafeMenuItemPrice">$15.95</span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Lump lobster claw and lobster tail in warm butter served on a
-                buttered New England roll. Served with fries and cole slaw.
+                Fresh lightly battered cod fillet fried to perfection, lettuce,
+                tomato, and tartar sauce served on a hard roll. Your choice of side.
               </div>
             </div>
           </div>
@@ -575,8 +551,8 @@ const CafeMenu = () => {
           <div className="CafeMenuItem">
             <div className="CafeMenuItemText">
               <h3 className="CafeMenuItemHeading">
-                <span className="CafeMenuItemName"> Chocolate Lava Cake </span>
-                <span className="CafeMenuItemPrice"> $5.99 </span>
+                <span className="CafeMenuItemName"> Fried Oreos </span>
+                <span className="CafeMenuItemPrice"> $6.99 </span>
               </h3>
               <div className="CafeMenuItemDesc">
                 Served with a chocolate syrup drizzle and whipped cream.
@@ -588,12 +564,12 @@ const CafeMenu = () => {
               <h3 className="CafeMenuItemHeading">
                 <span className="CafeMenuItemName">
                   {" "}
-                  New York Style Cheesecake{" "}
+                  Brownie Ice Cream Sundae{" "}
                 </span>
-                <span className="CafeMenuItemPrice"> $5.99 </span>
+                <span className="CafeMenuItemPrice"> $6.99 </span>
               </h3>
               <div className="CafeMenuItemDesc">
-                Served with a raspberry sauce drizzle and whipped cream.
+                Warm brownie topped with vanilla ice cream, chocolate sauce and whipped cream.
               </div>
             </div>
           </div>

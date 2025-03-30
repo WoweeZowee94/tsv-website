@@ -1,5 +1,5 @@
 import React from "react";
-import Pdf from "../images/2023_menu.pdf";
+import Pdf from "../images/2025Banquet.pdf";
 
 const InfoSection = ({ title, body, btnTitle, imgHeight, imgWidth }) => {
   return (

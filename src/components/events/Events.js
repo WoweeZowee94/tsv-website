@@ -43,7 +43,7 @@ const Events = () => {
           body="Check out all we have to offer for your special day."
           btnTitle="Events Menu"
           btnColor="#01bf71"
-          btnUrl="../images/EventsPDF.pdf"
+          btnUrl="../images/2025Banquet.pdf"
           imgHeight="300px"
           imgWidth="100%"
           img="../images/EventsMenu.png"
